@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Player Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-info {
+            padding: 15px;
+        }
+        .card-info h2 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .card-info p {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Football Player Cards</h1>
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="player1.jpg" alt="Player 1">
+            <div class="card-info">
+                <h2>Player Name 1</h2>
+                <p>Position: Forward</p>
+                <p>Team: FC Football</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="player2.jpg" alt="Player 2">
+            <div class="card-info">
+                <h2>Player Name 2</h2>
+                <p>Position: Midfielder</p>
+                <p>Team: United FC</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="player3.jpg" alt="Player 3">
+            <div class="card-info">
+                <h2>Player Name 3</h2>
+                <p>Position: Defender</p>
+                <p>Team: City FC</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
